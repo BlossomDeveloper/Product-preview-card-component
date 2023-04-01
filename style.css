@@ -1,0 +1,154 @@
+* {
+    font-family: "Montserrat", sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(30, 38%, 92%);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 500px;
+    border-radius: 30px;
+}
+
+.container {
+    width: 600px;
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    box-shadow: 5px 5px 20px -20px hsl(224, 30%, 27%);
+    border-radius: 15px;
+}
+.desktop-brand {
+    display: flex;
+    align-items: center;
+    width: 550px; 
+    height: 450px;
+    border-radius: 15px 0px 0px 15px ;  
+}
+
+.mobile-brand {
+    display: none;
+}
+
+.card {
+    background-color: hsl(0, 0%, 100%);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 0 30px 30px 0px;    
+    padding: 30px;
+}
+
+.card h3 {
+    color: hsl(228, 12%, 48%);
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.card h2 {
+    font-family: "Fraunces", sans-serif;
+    font-size: 35px;
+    font-weight: 700;
+    margin-top: 5px;
+    line-height: 35px;
+}
+
+.card p {
+    font-size: 14px;
+    line-height: 24px;
+    margin-top: -10px;
+    margin-bottom: -10px;
+    color:hsl(228, 12%, 48%);
+}
+
+.prices {
+    display: flex;
+    align-items: center;
+}
+
+.prices h1 {
+    font-family: "Fraunces", sans-serif;
+    color:hsl(158, 36%, 37%)
+}
+
+.prices h4 {
+    margin-left: 20px;
+    font-weight: 500;
+    font-size: 14px;
+    text-decoration:line-through;
+    color:hsl(228, 12%, 48%)
+}
+
+.btn {
+    background-color: hsl(158, 36%, 37%);
+    font-weight: 700;
+    color: hsl(0, 0%, 100%);
+    border: none;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 15px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.icon {
+    position: relative;
+    height: 18px;
+    width: 18px;
+    margin-right: 10px;
+    top: 0px;
+}
+
+.btn:hover {
+    background-color: hsl(212, 21%, 14%);
+}
+
+@media only screen and (max-width: 600px) {
+
+    .main-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 300px;
+    }
+
+    .mobile-brand {
+        display: flex;
+        align-items: center;
+        width: 360px;
+        border-radius: 20px 20px 0 0;
+    }
+   
+    .desktop-brand {
+        display: none !important;
+    }
+    
+    .card {
+        width: 360px;
+        height: 450px;
+        align-items: left;
+        padding: 25px;
+        border-radius: 0 0 30px 30px;
+    }    
+
+}
